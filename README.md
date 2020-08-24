@@ -1,10 +1,13 @@
 # vue-countdown
 
-[![Build Status](https://img.shields.io/travis/fengyuanchen/vue-countdown.svg)](https://travis-ci.org/fengyuanchen/vue-countdown) [![Coverage Status](https://img.shields.io/codecov/c/github/fengyuanchen/vue-countdown.svg)](https://codecov.io/gh/fengyuanchen/vue-countdown) [![Downloads](https://img.shields.io/npm/dm/@chenfengyuan/vue-countdown.svg)](https://www.npmjs.com/package/@chenfengyuan/vue-countdown) [![Version](https://img.shields.io/npm/v/@chenfengyuan/vue-countdown.svg)](https://www.npmjs.com/package/@chenfengyuan/vue-countdown)
-
 > Countdown component for [Vue.js](https://vuejs.org/).
 
-- [Website](https://fengyuanchen.github.io/vue-countdown)
+This is a slightly extended version of vue-countdown by [Chen Fengyuan](https://chenfengyuan.com/) (see [here](https://github.com/fengyuanchen/vue-countdown)).
+So far the library has been extended to allow negative countdowns. This was mainly based on the pull-request from [Jérôme Heissler](https://github.com/jeromeheissler).
+Thanks to Chen and Jérôme for your great work!
+
+ This library is explicitly not regularly updated, because I only needed the mentioned feature in one of my projects.
+ Should an update of the source library be released, pull requests or the opening of an issue are welcome.
 
 ## Table of contents
 
@@ -32,7 +35,7 @@ dist/
 ### Install
 
 ```shell
-npm install @chenfengyuan/vue-countdown vue
+npm install @janschoepke/vue-countdown vue
 ```
 
 In browser:
@@ -143,6 +146,19 @@ export default {
 };
 ```
 
+
+### allow-negative
+
+- Type: `Boolean`
+- Default: `false`
+
+Continues the countdown to negative when 0:00:00 is reached. To avoid strange sign effects, the above mentioned transform-prop should be used. Here the following line should be added:
+
+ ```
+ // Prevent minus sign
+ value = Math.abs(value);
+```
+
 [⬆ back to top](#table-of-contents)
 
 ## Methods
@@ -233,6 +249,6 @@ Maintained under the [Semantic Versioning guidelines](https://semver.org/).
 
 ## License
 
-[MIT](https://opensource.org/licenses/MIT) © [Chen Fengyuan](https://chenfengyuan.com/)
+[MIT](https://opensource.org/licenses/MIT)
 
 [⬆ back to top](#table-of-contents)

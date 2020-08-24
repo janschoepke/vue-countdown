@@ -1,5 +1,5 @@
 {
-  "name": "@chenfengyuan/vue-countdown",
+  "name": "@janschoepke/vue-countdown",
   "description": "Countdown component for Vue.js.",
   "version": "1.1.5",
   "main": "dist/vue-countdown.common.js",
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fengyuanchen/vue-countdown.git"
+    "url": "git+https://github.com/janschoepke/vue-countdown.git"
   },
   "keywords": [
     "countdown",
@@ -38,11 +38,21 @@
     "name": "Chen Fengyuan",
     "url": "https://chenfengyuan.com/"
   },
+  "contributors": [
+    {
+      "name": "Jan Schoepke",
+      "url": "https://github.com/janschoepke"
+    },
+    {
+      "name": "Jerome Heissler",
+      "url": "https://github.com/jeromeheissler"
+    }
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fengyuanchen/vue-countdown/issues"
+    "url": "https://github.com/janschoepke/vue-countdown/issues"
   },
-  "homepage": "https://fengyuanchen.github.io/vue-countdown",
+  "homepage": "https://janschoepke.github.io/vue-countdown",
   "devDependencies": {
     "@babel/core": "^7.8.4",
     "@babel/preset-env": "^7.8.4",
